@@ -1,4 +1,6 @@
-package com.kaiyanky2;
+package com.kaiyanky2.array;
+
+import com.kaiyanky2.array.Array;
 
 public class Main {
 

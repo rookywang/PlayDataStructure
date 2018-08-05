@@ -1,4 +1,4 @@
-package com.kaiyanky2;
+package com.kaiyanky2.array;
 
 /**
  * 数组
