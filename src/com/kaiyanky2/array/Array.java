@@ -1,9 +1,26 @@
 package com.kaiyanky2.array;
 
 /**
- * 数组
+ * 可扩容的动态数组
  * <p>
  * 各种方法主要就是围绕 "维护 data 和 size 两个变量" 进行编写
+ * <p>
+ * 数组的好处就是可以根据有意义的索引便可随机访问
+ * <p>
+ * 各个操作的时间复杂度为：
+ * get 操作时间复杂度为 O(1)
+ * contains 操作时间复杂度为 O(n)
+ * find 操作时间复杂度为 O(n)
+ * 以上为查找操作，已知索引为 O(1)，未知索引为 O(n)
+ * <p>
+ * set 操作时间复杂度为 O(1)
+ * 以上为修改操作
+ * <p>
+ * add 操作的时间复杂度 O(n)，addLast 虽然是 O(1) 级别的操作，但是如果触碰了 resize 那么依然 O(n)
+ * 以上为添加操作
+ * <p>
+ * remove 操作的时间复杂度 O(n)，removeLast 虽然是 O(1) 级别的操作，但是如果触碰了 resize 那么依然 O(n)
+ * 以上为删除操作
  */
 public class Array<E> {
 
@@ -198,7 +215,7 @@ public class Array<E> {
         }
         size--; // 涉及到元素数量改变注意维护 size
 
-        // 扩容的时候，数组满则扩容一倍，缩容时数组元素个数变为一半则缩容一半
+        // 扩容的时候，数组满则扩容一倍，缩容时数组元素个数变为四分之一则缩容一半
         // 这种情况容易出现复杂度震荡，不断地缩容扩容会明显增加数组复制次数，增加复杂度
         // data.length 不能是偶数，防止 resize 后的数组长度为 0
         if (size == data.length / 4 && data.length / 2 != 0) {
@@ -245,7 +262,7 @@ public class Array<E> {
      */
     private void resize(int newCapacity) {
         E[] newData = (E[]) new Object[newCapacity];
-        for (int i = 0; i < size; i ++) {
+        for (int i = 0; i < size; i++) {
             newData[i] = data[i];
         }
         data = newData;
