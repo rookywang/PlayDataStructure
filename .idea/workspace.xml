@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56ee17a9-19f6-4746-ad24-ef61eb1b1356" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/kaiyanky2/queue/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kaiyanky2/queue/LoopQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kaiyanky2/queue/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kaiyanky2/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kaiyanky2/array/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/array/Array.java" afterDir="false" />
-    </list>
+    <list default="true" id="56ee17a9-19f6-4746-ad24-ef61eb1b1356" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,8 +162,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/array/Array.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="217" column="46" lean-forward="true" selection-start-line="217" selection-start-column="26" selection-end-line="217" selection-end-column="46" />
+            <state relative-caret-position="669">
+              <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
               <folding>
                 <element signature="e#426#427#0" expanded="true" />
                 <element signature="e#450#451#0" expanded="true" />
@@ -309,7 +302,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="ArrayList&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/src.zip!/java/util/ArrayList.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533569675337" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533570830043" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -554,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/array/Array.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="217" column="46" lean-forward="true" selection-start-line="217" selection-start-column="26" selection-end-line="217" selection-end-column="46" />
+        <state relative-caret-position="669">
+          <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
           <folding>
             <element signature="e#426#427#0" expanded="true" />
             <element signature="e#450#451#0" expanded="true" />
