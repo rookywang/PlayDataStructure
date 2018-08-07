@@ -143,7 +143,7 @@ public class LinkedList<E> {
             throw new IllegalArgumentException("Index is illegal.");
         }
 
-        Node cur = dummyHead.next;
+        Node cur = dummyHead;
         for (int i = 0; i < index; i++) {
             cur = cur.next;
         }
