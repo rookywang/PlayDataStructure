@@ -14,17 +14,27 @@ public class Main {
 //            System.out.println(arrayQueue);
 //        }
 
-        LoopQueue<Integer> queue = new LoopQueue<>();
-        for(int i = 0 ; i < 10 ; i ++){
-            queue.enqueue(i);
-            System.out.println(queue);
+//        LoopQueue<Integer> queue = new LoopQueue<>();
+//        for(int i = 0 ; i < 10 ; i ++){
+//            queue.enqueue(i);
+//            System.out.println(queue);
+//
+//            if(i % 3 == 2){
+//                queue.dequeue();
+//                System.out.println(queue);
+//            }
+//        }
+//
+//        System.out.println("front: " + queue.getFront());
 
-            if(i % 3 == 2){
-                queue.dequeue();
-                System.out.println(queue);
-            }
+        LinkedListQueue<Integer> linkedListQueue = new LinkedListQueue<>();
+        for (int i = 0; i < 5; i++) {
+            linkedListQueue.enqueue(i);
+            System.out.println(linkedListQueue);
         }
 
-        System.out.println("front: " + queue.getFront());
+        linkedListQueue.dequeue();
+
+        System.out.println(linkedListQueue);
     }
 }
