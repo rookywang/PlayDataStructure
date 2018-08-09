@@ -85,13 +85,13 @@ public class LinkedList<E> {
             throw new IllegalArgumentException("Index is illegal.");
         }
 
-        Node pre = dummyHead.next; // 虚结点只是实现链表添加的小手段，所以此处第一个结点应该是虚结点的下一结点
+        Node cur = dummyHead.next; // 虚结点只是实现链表添加的小手段，所以此处第一个结点应该是虚结点的下一结点
 
         for (int i = 0; i < index; i++) {
-            pre = pre.next;
+            cur = cur.next;
         }
 
-        return pre.e;
+        return cur.e;
     }
 
     /**
@@ -143,14 +143,15 @@ public class LinkedList<E> {
             throw new IllegalArgumentException("Index is illegal.");
         }
 
-        Node cur = dummyHead;
+        Node pre = dummyHead;
         for (int i = 0; i < index; i++) {
-            cur = cur.next;
+            pre = pre.next;
         }
 
-        Node del = cur.next;
-        cur.next = del.next;
-        cur.next = null;
+        Node del = pre.next;
+        pre.next = del.next;
+//        pre.next = null; // 这样就出 bug 了。。。。pop 以下链表空了，这种手误不能再出现
+        del.next = null;
         size--;
 
         return del.e;

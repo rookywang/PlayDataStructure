@@ -28,6 +28,8 @@ public class Main {
             System.out.println(linkedListStack);
         }
 
+        System.out.println(linkedListStack.peek());
+
         linkedListStack.pop();
         System.out.println(linkedListStack);
 

@@ -22,31 +22,24 @@ public class LinkedListStack<E> implements Stack<E> {
 
     @Override
     public void push(E e) {
-        linkedList.addLast(e);
+        linkedList.addFirst(e);
     }
 
     @Override
     public E pop() {
-        return linkedList.removeLast();
+        return linkedList.removeFirst();
     }
 
     @Override
     public E peek() {
-        return linkedList.getLast();
+        return linkedList.getFirst();
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("LinkedListStack: "));
-        sb.append("[");
-        for (int i = 0; i < getSize(); i++) {
-            sb.append(linkedList.get(i));
-            if (i != getSize() - 1) {
-                sb.append(", ");
-            }
-        }
-        sb.append("] top");
+        sb.append("LinkedListStack top: ");
+        sb.append(linkedList);
 
         return sb.toString();
     }
