@@ -11,7 +11,14 @@ public class Main {
         }
 
 //        binarySearchTree.preOrder();
+        binarySearchTree.inOrder();
 
-        System.out.println(binarySearchTree);
+        System.out.println();
+
+//        binarySearchTree.preOrderNR();
+
+//        binarySearchTree.levelOrder();
+
+//        System.out.println(binarySearchTree);
     }
 }

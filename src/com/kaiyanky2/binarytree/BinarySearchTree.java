@@ -1,5 +1,8 @@
 package com.kaiyanky2.binarytree;
 
+import com.kaiyanky2.queue.LinkedListQueue;
+import com.kaiyanky2.stack.LinkedListStack;
+
 /**
  * 二叉搜索树
  */
@@ -112,6 +115,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 
     /**
      * 中序遍历
+     * 二叉搜索树的中序遍历就是二叉搜索树排好序的顺序
      */
     public void inOrder() {
         inOrder(root);
@@ -127,9 +131,9 @@ public class BinarySearchTree<E extends Comparable<E>> {
             return;
         }
 
-        preOrder(node.left);
+        inOrder(node.left);
         System.out.println(node.e);
-        preOrder(node.right);
+        inOrder(node.right);
     }
 
     /**
@@ -149,9 +153,72 @@ public class BinarySearchTree<E extends Comparable<E>> {
             return;
         }
 
-        preOrder(node.left);
-        preOrder(node.right);
+        postOrder(node.left);
+        postOrder(node.right);
         System.out.println(node.e);
+    }
+
+
+    /**
+     * 前序遍历非递归实现
+     */
+    public void preOrderNR() {
+        preOrderNR(root);
+    }
+
+    /**
+     * 以 node 为根节点的二叉搜索树的前序遍历非递归实现
+     *
+     * @param node
+     */
+    private void preOrderNR(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        LinkedListStack<Node> stack = new LinkedListStack<>();
+        stack.push(node);
+        while (!stack.isEmpty()) {
+            Node cur = stack.pop();
+            System.out.println(cur.e);
+            if (cur.right != null) {
+                stack.push(cur.right);
+            }
+            if (cur.left != null) {
+                stack.push(cur.left);
+            }
+        }
+    }
+
+    /**
+     * 二叉搜索树的层序遍历
+     */
+    public void levelOrder() {
+        levelOrder(root);
+    }
+
+    /**
+     * 以 node 为根节点的二叉搜索树的层序遍历（广度优先遍历）
+     *
+     * @param node
+     */
+    private void levelOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+
+        LinkedListQueue<Node> queue = new LinkedListQueue<>();
+        queue.enqueue(node);
+        while (!queue.isEmpty()) {
+            Node cur = queue.dequeue();
+            System.out.println(cur.e);
+            if (cur.left != null) {
+                queue.enqueue(cur.left);
+            }
+            if (cur.right != null) {
+                queue.enqueue(cur.right);
+            }
+        }
     }
 
     @Override
