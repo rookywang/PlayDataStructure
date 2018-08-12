@@ -92,6 +92,182 @@ public class BinarySearchTree<E extends Comparable<E>> {
     }
 
     /**
+     * 查找二叉搜索树的最小值
+     *
+     * @return 最小值
+     */
+    public E minium() {
+        if (size == 0) {
+            throw new IllegalArgumentException("Tree is empty.");
+        }
+
+        Node minNode = minimum(root);
+        return minNode.e;
+    }
+
+    /**
+     * 查找以 node 为根节点的二叉搜索树的最小值所在节点
+     *
+     * @param node
+     * @return 最小值所在节点
+     */
+    private Node minimum(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+
+        return minimum(node.left);
+    }
+
+    /**
+     * 删除最小值所在节点并返回最小值
+     *
+     * @return 最小值
+     */
+    public E removeMin() {
+        Node minNode = minimum(root);
+
+        removeMin(root);
+
+        return minNode.e;
+    }
+
+    /**
+     * 删除以 node 为根节点的二叉搜索树的最小值所在节点
+     *
+     * @param node
+     * @return 删除节点后新的二叉搜索树的根节点
+     */
+    private Node removeMin(Node node) {
+        if (node.left == null) {
+            Node rightNode = node.right;
+            node.right = null;
+            size--;
+            return rightNode;
+        }
+
+        node.left = removeMin(node.left);
+        return node;
+    }
+
+    /**
+     * 查找二叉搜索树的最大值
+     *
+     * @return 最大值
+     */
+    public E maximum() {
+        if (size == 0) {
+            throw new IllegalArgumentException("Tree is empty.");
+        }
+
+        Node maxNode = maximum(root);
+        return maxNode.e;
+    }
+
+    /**
+     * 查找以 node 为根节点的二叉搜索树的最大值所在节点
+     *
+     * @param node
+     * @return 最大值所在节点
+     */
+    private Node maximum(Node node) {
+        if (node.right == null) {
+            return node;
+        }
+
+        return maximum(node.right);
+    }
+
+    /**
+     * 删除最大值所在节点并返回最大值
+     *
+     * @return 最大值
+     */
+    public E removeMax() {
+        Node maxNode = maximum(root);
+
+        removeMax(root);
+
+        return maxNode.e;
+    }
+
+    /**
+     * 删除以 node 为根节点的二叉搜索树的最大值所在节点
+     *
+     * @param node
+     * @return 删除节点后新的二叉搜索树的根节点
+     */
+    private Node removeMax(Node node) {
+        if (node.right != null) {
+            Node leftNode = node.left;
+            node.left = null;
+            size--;
+            return leftNode;
+        }
+
+        node.right = removeMax(node.right);
+        return node;
+    }
+
+    /**
+     * 从二叉搜索树中删除元素为 e 的节点
+     *
+     * @param e
+     */
+    public void remove(E e) {
+        root = remove(root, e);
+    }
+
+    /**
+     * 删除以 node 为根节点的二叉搜索树中的元素为 e 的节点，返回删除后的二叉树的根
+     *
+     * @param node
+     * @param e
+     * @return 二叉树删除节点操作后的根
+     */
+    private Node remove(Node node, E e) {
+        if (node == null) {
+            return null;
+        }
+
+        if (e.compareTo(node.e) < 0) {
+            node.left = remove(node.left, e);
+            return node;
+
+        } else if (e.compareTo(node.e) > 0) {
+            node.right = remove(node.right, e);
+            return node;
+
+        } else {
+            // 待删除节点左子树为空
+            if (node.left == null) {
+                Node rightNode = node.right;
+                node.right = null;
+                size--;
+                return rightNode;
+            }
+
+            // 待删除节点右子树为空
+            if (node.right == null) {
+                Node leftNode = node.left;
+                node.left = null;
+                size--;
+                return leftNode;
+            }
+
+            // 待删除节点左右子树均不为空
+            // 找到比待删除节点元素大的最小节点，即被删除节点右子树的最小节点
+            // 找到这个节点代替被删除节点
+            Node okNode = minimum(node.right);
+            okNode.right = removeMin(node.right);
+            okNode.left = node.left;
+
+            node.left = node.right = null;
+            return okNode;
+        }
+    }
+
+    /**
      * 前序遍历
      */
     public void preOrder() {
@@ -250,6 +426,9 @@ public class BinarySearchTree<E extends Comparable<E>> {
         return stringBuilder.toString();
     }
 
+    /**
+     * 节点
+     */
     private class Node {
 
         public E e;

@@ -6,19 +6,23 @@ public class Main {
         BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
 
         int[] numArray = {35, 23, 6, 58, 14};
-        for(int num: numArray) {
+        for (int num : numArray) {
             binarySearchTree.add(num);
         }
 
 //        binarySearchTree.preOrder();
-        binarySearchTree.inOrder();
+//        binarySearchTree.inOrder();
 
-        System.out.println();
+//        System.out.println();
 
 //        binarySearchTree.preOrderNR();
 
 //        binarySearchTree.levelOrder();
 
-//        System.out.println(binarySearchTree);
+        System.out.println(binarySearchTree);
+        binarySearchTree.remove(58);
+
+        System.out.println(binarySearchTree);
+
     }
 }
