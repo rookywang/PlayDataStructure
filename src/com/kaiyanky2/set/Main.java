@@ -24,5 +24,16 @@ public class Main {
 
         System.out.println("Total words: " + strings.size());
         System.out.println("Total different words: " + searchTreeSet.getSize());
+
+        System.out.println();
+
+        LinkedListSet<String> linkedListSet = new LinkedListSet<>();
+        for (String text:
+             strings) {
+            linkedListSet.add(text);
+        }
+
+        System.out.println("Total words: " + strings.size());
+        System.out.println("Total different words: " + linkedListSet.getSize());
     }
 }
