@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ee17a9-19f6-4746-ad24-ef61eb1b1356" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/BinarySearchTree.java" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/BinarySearchTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/Main.java" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/set/BinarySearchTreeSet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/set/FileOperation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/set/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kaiyanky2/set/Set.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,26 +49,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/binarytree/BinarySearchTree.java">
+      <file leaf-file-name="Set.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/Set.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="251" column="40" lean-forward="true" selection-start-line="251" selection-start-column="40" selection-end-line="251" selection-end-column="40" />
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinarySearchTreeSet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/BinarySearchTreeSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3961#3962#0" expanded="true" />
-                <element signature="e#3999#4000#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/binarytree/Main.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileOperation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/FileOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +147,12 @@
         <option value="$PROJECT_DIR$/src/com/kaiyanky2/stack/Main.java" />
         <option value="$PROJECT_DIR$/src/com/kaiyanky2/stack/LinkedListStack.java" />
         <option value="$PROJECT_DIR$/src/com/kaiyanky2/linkedlist/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/kaiyanky2/binarytree/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/com/kaiyanky2/set/Set.java" />
+        <option value="$PROJECT_DIR$/src/com/kaiyanky2/set/BinarySearchTreeSet.java" />
+        <option value="$PROJECT_DIR$/src/com/kaiyanky2/set/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/kaiyanky2/set/FileOperation.java" />
       </list>
     </option>
   </component>
@@ -193,6 +231,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kaiyanky2" type="462c0819:PsiDirectoryNode" />
               <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlayDataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlayDataStructure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kaiyanky2" type="462c0819:PsiDirectoryNode" />
+              <item name="set" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlayDataStructure" type="b2602c69:ProjectViewProjectNode" />
@@ -354,12 +399,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533224315232</updated>
-      <workItem from="1533829516667" duration="14834000" />
+      <workItem from="1533829516667" duration="16495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14834000" />
+    <option name="totallyTimeSpent" value="16495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="778" extended-state="6" />
@@ -620,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/binarytree/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="251" column="40" lean-forward="true" selection-start-line="251" selection-start-column="40" selection-end-line="251" selection-end-column="40" />
+        <state relative-caret-position="138">
+          <caret line="252" column="33" lean-forward="true" selection-start-line="252" selection-start-column="33" selection-end-line="252" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3961#3962#0" expanded="true" />
@@ -632,9 +677,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/binarytree/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/BinarySearchTreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kaiyanky2/set/FileOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
