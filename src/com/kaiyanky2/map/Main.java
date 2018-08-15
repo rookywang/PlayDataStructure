@@ -38,5 +38,6 @@ public class Main {
 
         System.out.println("BinarySearchTreeMap - Total words: " + texts.length);
         System.out.println("BinarySearchTreeMap - Total different words: " + binarySearchTreeMap.getSize());
+        System.out.println("hhh: " + binarySearchTreeMap.get("hhh") );
     }
 }
