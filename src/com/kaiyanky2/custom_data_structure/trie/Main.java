@@ -1,4 +1,4 @@
-package com.kaiyanky2.trie;
+package com.kaiyanky2.custom_data_structure.trie;
 
 public class Main {
 
